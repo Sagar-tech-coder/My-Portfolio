@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { NavLink } from "react-router-dom";
 import Me from "../assets/Me.png";
 import java from "../assets/java.svg";
 import html from "../assets/html.svg";
@@ -10,12 +11,15 @@ import react from "../assets/react.svg";
 import mysql from "../assets/mysql.svg";
 import git from "../assets/git.svg";
 import github from "../assets/github.svg";
-// import allskills from "../assets/allskills.png";
-// import TicTac from "../assets/TicTac.png";
-// import EcoLabs from "../assets/EcoLabs.png";
-// import cal from "../assets/cal.png";
+import allskills from "../assets/allskills.png";
+import TicTac from "../assets/TicTac.png";
+import EcoLabs from "../assets/EcoLabs.png";
+import cal from "../assets/cal.png";
 // import Arrow from "../assets/Arrow.png";
 // import { Cursor, Typewriter } from "react-simple-typewriter";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -109,6 +113,128 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* Skills Image Section */}
+      <section id="skills-img-main">
+        {/* Skills Image */}
+        <img src={allskills} alt="" className="skills-img" />
+      </section>
+      {/* Projects */}
+      <section id="projects">
+        {/* project 01 */}
+        <div className="project-main">
+          <div className="project-left">
+            {/* featured project text */}
+            <div className="featured-text">
+              <NavLink
+                to="https://fascinating-pavlova-51f685.netlify.app/"
+                className="view-project"
+              >
+                View Project
+              </NavLink>
+            </div>
+            {/* example project text */}
+            <div className="example-text">EcoLabs Project</div>
+            {/* prject desc */}
+            <div className="project-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              recusandae nesciunt sint, laboriosam sit quasi hic expedita qui
+              sapiente placeat! Iusto, minus! Quis sed pariatur culpa ipsa vitae
+              exercitationem odio.
+            </div>
+          </div>
+          <div className="project-right">
+            <img src={EcoLabs} alt="" />
+          </div>
+        </div>
+        {/* project 02 */}
+        <div className="project-main-reves">
+          <div className="project-left-reves">
+            {/* featured project text */}
+            <div className="featured-text-reves">
+              <NavLink
+                to="https://taupe-licorice-6d6e68.netlify.app/"
+                className="view-project"
+              >
+                View Project
+              </NavLink>
+            </div>
+            {/* example project text */}
+            <div className="example-text-reves">TicTac Game Project</div>
+            {/* prject desc */}
+            <div className="project-desc-reves">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              recusandae nesciunt sint, laboriosam sit quasi hic expedita qui
+              sapiente placeat! Iusto, minus! Quis sed pariatur culpa ipsa vitae
+              exercitationem odio.
+            </div>
+          </div>
+          <div className="project-right-reves">
+            <img src={TicTac} alt="" />
+          </div>
+        </div>
+        {/* project 03 */}
+        <div className="project-main">
+          <div className="project-left">
+            {/* featured project text */}
+            <div className="featured-text">
+              <NavLink
+                to="https://sagarcalculate.netlify.app/"
+                className="view-project"
+              >
+                View Project
+              </NavLink>
+            </div>
+            {/* example project text */}
+            <div className="example-text">Calculator Project</div>
+            {/* prject desc */}
+            <div className="project-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              recusandae nesciunt sint, laboriosam sit quasi hic expedita qui
+              sapiente placeat! Iusto, minus! Quis sed pariatur culpa ipsa vitae
+              exercitationem odio.
+            </div>
+          </div>
+          <div className="project-right">
+            <img src={cal} alt="" />
+          </div>
+        </div>
+      </section>
+      {/* Contact Section */}
+      <section id="contact">
+        <h3>Contact</h3>
+        <p className="contact-desc">
+          I'm currently looking to join a cross-functional team that values
+          improving people's lives through accessible design. or have a project
+          in mind? Let's connect.
+        </p>
+        {/* send me email */}
+        <button>Send me Email</button>
+        <div className="social-logos">
+          {/* Instagram Logo */}
+          <NavLink>
+            <FaInstagramSquare className="logo-social" />
+          </NavLink>
+          {/* Github Logo */}
+          <NavLink>
+            <FaGithubSquare className="logo-social" />
+          </NavLink>
+          {/* Linkedin Logo */}
+          <NavLink to="https://www.linkedin.com/in/thesagarpatra/">
+            <FaLinkedin className="logo-social" />
+          </NavLink>
+        </div>
+      </section>
+      {/* footer text center */}
+      <section className="footer-text">
+        Copyright © 2024 Designed by{" "}
+        <NavLink
+          className="own-link"
+          to="https://www.linkedin.com/in/thesagarpatra/"
+        >
+          Sagar Patra
+        </NavLink>{" "}
+        | All rights reserved
       </section>
     </>
   );
