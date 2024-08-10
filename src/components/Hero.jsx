@@ -1,4 +1,5 @@
 import "./Hero.css";
+import "./@media_query.css";
 // import { Link, NavLink } from "react-router-dom";
 import Me from "../assets/Me.png";
 import java from "../assets/java.svg";
@@ -16,7 +17,7 @@ import TicTac from "../assets/TicTac.png";
 import EcoLabs from "../assets/EcoLabs.png";
 import cal from "../assets/cal.png";
 // import Arrow from "../assets/Arrow.png";
-// import { Cursor, Typewriter } from "react-simple-typewriter";
+import { Cursor, Typewriter } from "react-simple-typewriter";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -24,6 +25,15 @@ import { FaLinkedin } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
+      {/* Header Section */}
+      <section id="header">
+        <div className="logo">&lt;&#47;Sagar&gt;</div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Lab</li>
+        </ul>
+      </section>
       <section id="hero">
         <div className="me-img">
           <img src={Me} alt="" />
@@ -43,8 +53,25 @@ const Hero = () => {
         </div>
         {/* Auto Text */}
         <h1>
-          I'm a {""}
-          <span>{/* <Typewriter /> */}</span>
+          I'm a{" "}
+          <span className="type-writer">
+            <Typewriter
+              words={[
+                "Front-end Engineer",
+                "UI/UX Designer",
+                "JavaScript Developer",
+                "React.js Developer",
+                "Web Developer",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle=""
+              typeSpeed={50}
+              deleteSpeed={40}
+              delaySpeed={1500}
+            />
+          </span>
+          <Cursor />
         </h1>
         <div className="looking-text">
           Currently I'm looking for a Front-end role in IT Industry.

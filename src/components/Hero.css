@@ -1,4 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+#header{
+    padding: 3vh 7vw;
+    background-color: #1A0B2E;
+    font-family: "Preahvihear", sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+    color: cornflowerblue;
+    /* font-family: "Allura", cursive; */
+    font-family: "Dancing Script", cursive;
+    font-weight: 800;
+    /* color: #059862; */
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+ul li{
+    /* display: flex; */
+    list-style-type: none;
+}
 
 #hero{
     background-color: #11071F;
@@ -41,6 +72,18 @@
 
 .book-text span{
     color: #7127BA;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+span{
+    color: #7127BA;
+}
+
+.box > span{
+    color: #fff;
 }
 
 #about{
