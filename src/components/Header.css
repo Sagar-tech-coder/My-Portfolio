@@ -1,0 +1,22 @@
+#header{
+    padding: 3vh 7vw;
+    background-color: #1A0B2E;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+ul li{
+    /* display: flex; */
+    list-style-type: none;
+}
