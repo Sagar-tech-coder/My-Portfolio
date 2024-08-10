@@ -1,5 +1,5 @@
 import "./Hero.css";
-import { NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 import Me from "../assets/Me.png";
 import java from "../assets/java.svg";
 import html from "../assets/html.svg";
@@ -77,39 +77,39 @@ const Hero = () => {
             smartphones, tablets, and desktops.
           </p>
           {/* tools icons */}
-          <div class="tools-grid">
-            <div class="box" id="box1">
+          <div className="tools-grid">
+            <div className="box" id="box1">
               <img src={java} alt="" />
               <span>JAVA</span>
             </div>
-            <div class="box" id="box2">
+            <div className="box" id="box2">
               <img src={html} alt="" /> <span>HTML</span>
             </div>
-            <div class="box" id="box3">
+            <div className="box" id="box3">
               <img src={css} alt="" /> <span>CSS</span>
             </div>
-            <div class="box" id="box4">
+            <div className="box" id="box4">
               <img src={sass} alt="" /> <span>Sass</span>
             </div>
-            <div class="box" id="box5">
+            <div className="box" id="box5">
               <img src={js} alt="" /> <span>JavaScript</span>
             </div>
-            <div class="box" id="box6">
+            <div className="box" id="box6">
               <img src={tailwind} alt="" />
               <span>Tailwind CSS</span>
             </div>
-            <div class="box" id="box7">
+            <div className="box" id="box7">
               <img src={react} alt="" />
               <span>React.js</span>
             </div>
-            <div class="box" id="box8">
+            <div className="box" id="box8">
               <img src={mysql} alt="" /> <span>MySQL</span>
             </div>
-            <div class="box" id="box9">
+            <div className="box" id="box9">
               <img src={git} alt="" /> <span>Git</span>
             </div>
-            <div class="box" id="box10">
-              <img src={github} alt="" /> <span>GitHub</span>
+            <div className="box" id="box10">
+              <img className="github" src={github} alt="" /> <span>GitHub</span>
             </div>
           </div>
         </div>
@@ -126,12 +126,12 @@ const Hero = () => {
           <div className="project-left">
             {/* featured project text */}
             <div className="featured-text">
-              <NavLink
-                to="https://fascinating-pavlova-51f685.netlify.app/"
+              <a
+                href="https://fascinating-pavlova-51f685.netlify.app/"
                 className="view-project"
               >
                 View Project
-              </NavLink>
+              </a>
             </div>
             {/* example project text */}
             <div className="example-text">EcoLabs Project</div>
@@ -152,12 +152,12 @@ const Hero = () => {
           <div className="project-left-reves">
             {/* featured project text */}
             <div className="featured-text-reves">
-              <NavLink
-                to="https://taupe-licorice-6d6e68.netlify.app/"
+              <a
+                href="https://taupe-licorice-6d6e68.netlify.app/"
                 className="view-project"
               >
                 View Project
-              </NavLink>
+              </a>
             </div>
             {/* example project text */}
             <div className="example-text-reves">TicTac Game Project</div>
@@ -178,12 +178,12 @@ const Hero = () => {
           <div className="project-left">
             {/* featured project text */}
             <div className="featured-text">
-              <NavLink
-                to="https://sagarcalculate.netlify.app/"
+              <a
+                href="https://sagarcalculate.netlify.app/"
                 className="view-project"
               >
                 View Project
-              </NavLink>
+              </a>
             </div>
             {/* example project text */}
             <div className="example-text">Calculator Project</div>
@@ -212,30 +212,31 @@ const Hero = () => {
         <button>Send me Email</button>
         <div className="social-logos">
           {/* Instagram Logo */}
-          <NavLink>
+          <a href="https://www.instagram.com/sagarpatra948/?hl=en">
             <FaInstagramSquare className="logo-social" />
-          </NavLink>
+          </a>
           {/* Github Logo */}
-          <NavLink>
+          <a href="https://github.com/Sagar-tech-coder">
             <FaGithubSquare className="logo-social" />
-          </NavLink>
+          </a>
           {/* Linkedin Logo */}
-          <NavLink to="https://www.linkedin.com/in/thesagarpatra/">
+          <a href="https://www.linkedin.com/in/thesagarpatra/">
             <FaLinkedin className="logo-social" />
-          </NavLink>
+          </a>
         </div>
       </section>
       {/* footer text center */}
-      <section className="footer-text">
-        Copyright © 2024 Designed by{" "}
-        <NavLink
+      <div className="footer-text">
+        Copyright © 2024 Designed by
+        <a
+          href="https://www.linkedin.com/in/thesagarpatra/"
           className="own-link"
-          to="https://www.linkedin.com/in/thesagarpatra/"
         >
-          Sagar Patra
-        </NavLink>{" "}
+          {"  "}
+          Sagar{"  "}
+        </a>
         | All rights reserved
-      </section>
+      </div>
     </>
   );
 };

@@ -100,22 +100,27 @@
     font-size: 15px;
 }
 
+img.github{
+    color: #fff;
+}
+
 .skills-img{
     padding-top: 5rem;
 }
 
-#project{
+#projects{
     /* padding-top: 10rem; */
     /* height: 100vh; */
     width: 100%;
     /* padding: 5vh 0; */
+    background-color: #11071F;
 }
 
 .project-main{
     height: fit-content;
     width: 100%;
     padding: 0 15vw;
-    margin: 3rem 0;
+    padding: 3rem 0;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -231,9 +236,9 @@ img.cal-img{
     background-image: linear-gradient(to right, #201435 , #7A6C8E);
 }
 
-/* #skills-img-main{
+#skills-img-main{
     background-color: #11071F;
-} */
+}
 
 #skills-img-main .skills-img{
     height: 700px;
@@ -242,6 +247,7 @@ img.cal-img{
 #contact{
     text-align: left;
     padding: 5vh 40vw 5vh 8vw;
+    background-color: #11071F;
 }
 
 h3{
