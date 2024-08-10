@@ -2,7 +2,7 @@
 
 #hero{
     background-color: #11071F;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     font-family: "Preahvihear", sans-serif;
     /* font-weight: 400;
@@ -45,4 +45,61 @@
 
 #about{
     background-color: #11071F;
+    padding: 5vh 8vw;
+}
+
+.about-main{
+    padding-top: 10vh;
+    text-align: left;
+}
+
+.about-h{
+    font-size: 1.2rem;
+}
+
+.tools-main{
+    padding-top: 10vh;
+    text-align: left;
+}
+
+.tools-h{
+    font-size: 1.2rem;
+}
+
+/* ############################################### */
+
+.tools-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.box{
+    margin: 10px;
+    background-color: rgb(5, 32, 42);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box img{
+    height: 40px;
+}
+
+#box6 img{
+    height: 25px;
+}
+
+.box span{
+    font-size: 15px;
+}
+
+.skills-img{
+    padding-top: 5rem;
 }
