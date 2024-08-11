@@ -2,14 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Preahvihear&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+#maincontainer{
+    height: auto;
+    width: 100%;
+    background-color: rgb(9, 42, 73);
+}
+
 #header{
     padding: 3vh 7vw;
-    background-color: #1A0B2E;
+    /* background-color: #1A0B2E; */
+    background-color: rgb(8, 36, 61);
     font-family: "Preahvihear", sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 12px 10px 1px rgb(60, 60, 103);
 }
 
 .logo{
@@ -32,7 +40,7 @@ ul li{
 }
 
 #hero{
-    background-color: #11071F;
+    /* background-color: #11071F; */
     /* height: 100vh; */
     width: 100%;
     font-family: "Preahvihear", sans-serif;
@@ -86,8 +94,57 @@ span{
     color: #fff;
 }
 
+.html{
+    color: chocolate;
+}
+
+.css{
+    color: #1572B6;
+}
+
+.tailwind{
+    color: #19B2B9;
+}
+
+.js{
+    color: #ebd968;
+}
+
+.react{
+    color: #61DAFB;
+}
+
+.f{
+    color: #F74B11;
+}
+
+.i{
+    color: #B056F7;
+}
+
+.g{
+    color: #00B6F7;
+}
+
+.m{
+    color: #F76F5E;
+}
+
+.aa{
+    color: #00C97B;
+}
+
+.software{
+    color: #026FEF;
+}
+
+/* .cu{
+    color: red;
+    background-color: #00B6F7;
+} */
+
 #about{
-    background-color: #11071F;
+    /* background-color: #11071F; */
     padding: 5vh 8vw;
 }
 
@@ -97,6 +154,7 @@ span{
 }
 
 .about-h{
+    color: orange;
     font-size: 1.2rem;
 }
 
@@ -106,6 +164,7 @@ span{
 }
 
 .tools-h{
+    color: orange;
     font-size: 1.2rem;
 }
 
@@ -156,7 +215,7 @@ img.github{
     /* height: 100vh; */
     width: 100%;
     /* padding: 5vh 0; */
-    background-color: #11071F;
+    /* background-color: #11071F; */
 }
 
 .project-main{
@@ -279,9 +338,9 @@ img.cal-img{
     background-image: linear-gradient(to right, #201435 , #7A6C8E);
 }
 
-#skills-img-main{
+/* #skills-img-main{
     background-color: #11071F;
-}
+} */
 
 #skills-img-main .skills-img{
     height: 700px;
@@ -290,7 +349,7 @@ img.cal-img{
 #contact{
     text-align: left;
     padding: 5vh 40vw 5vh 8vw;
-    background-color: #11071F;
+    /* background-color: #11071F; */
 }
 
 h3{
@@ -327,10 +386,14 @@ button:hover{
     font-size: 30px;
 }
 
+#footer{
+    background-color: rgb(8, 36, 61);
+}
+
 .footer-text{
     text-align: center;
     padding: 15px 0;
-    background-color: #22082f;
+    /* background-color: #22082f; */
 }
 
 .own-link{

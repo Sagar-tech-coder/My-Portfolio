@@ -1551,8 +1551,8 @@ h1 span{
 .project-main{
     height: fit-content;
     width: 100%;
-    padding: 0 2vw;
-    margin: 3rem 0;
+    padding: 3rem 2vw;
+    margin: 0 0;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -1562,8 +1562,8 @@ h1 span{
 .project-main-reves{
     height: fit-content;
     width: 100%;
-    padding: 0 2vw;
-    margin: 3rem 0;
+    padding: 3rem 2vw;
+    margin: 0 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -2472,6 +2472,11 @@ ul{
     gap: 50px;
 }
 
+ul li{
+    font-size: 13px;
+    list-style-type: none;
+}
+
 .nav{
     display: none;
     justify-content: space-between;
@@ -2564,7 +2569,7 @@ h1 span{
 }
 
 .looking-text{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .about-main{
@@ -2845,6 +2850,11 @@ ul{
     gap: 20px;
 }
 
+ul li{
+    font-size: 13px;
+    list-style-type: none;
+}
+
 .nav{
     display: none;
     justify-content: space-between;
@@ -2937,7 +2947,7 @@ h1 span{
 }
 
 .looking-text{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .about-main{
@@ -3215,7 +3225,12 @@ button:hover{
 }
 
 ul{
-    gap: 50px;
+    gap: 20px;
+}
+
+ul li{
+    font-size: 10px;
+    list-style-type: none;
 }
 
 .nav{
@@ -3250,13 +3265,13 @@ img.logo{
 .me-img{
     background-image: url("../assets/Arrow.png");
     background-repeat: no-repeat;
-    background-position: 11rem -2rem;
+    background-position: 6rem -2rem;
     display: flex;
     /* flex-direction: column; */
 }
 
 .me-img img{
-    height: 200px;
+    height: 155px;
 }
 
 .text-section{
@@ -3267,7 +3282,7 @@ img.logo{
 
 .name{
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 400;
     font-style: normal;
 }
@@ -3277,7 +3292,7 @@ img.logo{
 }
 
 .designer{
-    padding-top: 6rem;
+    padding-top: 1rem;
     color: #fff;
     font-size: 10px;
     text-align: left;
@@ -3301,7 +3316,7 @@ img.logo{
 
 h1{
     margin-top: 50px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 h1 span{
@@ -3310,7 +3325,7 @@ h1 span{
 }
 
 .looking-text{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .about-main{
@@ -3344,7 +3359,7 @@ h1 span{
 .tools-grid{
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 160px 160px;
     /* background-color: #2196F3; */
     padding: 10px 0;
 }
@@ -3383,8 +3398,8 @@ h1 span{
 } */
 
 #skills-img-main .skills-img{
-    height: 500px;
-    width: 490px;
+    height: 350px;
+    width: 300px;
 }
 
 #about{
@@ -3423,25 +3438,25 @@ h1 span{
 }
 
 .project-left{
-    padding-top: 80px;
-    height: 350px;
-    width: 65%;
+    padding-top: 0;
+    height: 320px;
+    width: 75%;
     text-align: left;
     z-index: 100;
     /* background-color: orange; */
 }
 
 .project-left-reves{
-    padding-top: 80px;
-    height: 350px;
-    width: 65%;
+    padding-top: 0;
+    height: 500px;
+    width: 75%;
     text-align: right;
     /* background-color: orange; */
 }
 
 .project-right{
-    height: 330px;
-    width: 30%;
+    height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     text-align: right;
@@ -3523,7 +3538,7 @@ img.cal-img{
 
 #contact{
     text-align: left;
-    padding: 5vh 40vw 5vh 8vw;
+    padding: 5vh 9vw 5vh 8vw;
 }
 
 h3{
@@ -3563,7 +3578,7 @@ button:hover{
 
 .footer-text{
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     padding: 15px 0;
     background-color: #22082f;
 }
